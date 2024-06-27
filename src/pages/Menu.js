@@ -24,11 +24,11 @@ const Menu = () => {
                 src={menu.image}
                 alt={menu.name}
               />
-              <CardContent>
-                <Typography variant="h5" gutterBottom component={"div"}>
+              <CardContent >
+                <Typography variant="h5" gutterBottom component={"div"} sx={{textAlign:"center"}}>
                   {menu.name}
                 </Typography>
-                <Typography variant="body2">{menu.description}</Typography>
+                
               </CardContent>
             </CardActionArea>
           </Card>
