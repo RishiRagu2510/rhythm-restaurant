@@ -1,4 +1,4 @@
-import  Dosa from "../images/dosa.jpg";
+import Dosa from "../images/dosa.jpg";
 import Idly from "../images/idly.jpg";
 import Poori from "../images/poori.jpg";
 import Paratto from "../images/paratto.jpg";
@@ -20,19 +20,19 @@ export const MenuList = [
     name: "Dosa",
     image: Dosa,
     price: "₹40",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Chappathi",
     image: Chappathi,
     price: "₹40",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Paratto",
     image: Paratto,
     price: "₹40",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Pongal",
@@ -48,29 +48,29 @@ export const MenuList = [
     name: "Poori",
     image: Poori,
     price: "₹30",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Biryani",
     image: Biryani,
     price: "₹120",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Chicken Manchurian",
     image: CM,
     price: "₹90",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Chicken Noodles",
     image: CN,
     price: "₹80",
-    favourite:"yes"
+    favourite: "yes"
   },
   {
     name: "Chicken Rice",
-    image:CR,
+    image: CR,
     price: "₹90",
   },
   {
@@ -92,7 +92,7 @@ export const MenuList = [
     name: "Uttappam",
     image: Uttappam,
     price: "₹40",
-  },{
+  }, {
     name: "Veg Noodles",
     image: VN,
     price: "₹70",
@@ -101,5 +101,40 @@ export const MenuList = [
     name: "Veg Rice",
     image: VR,
     price: "₹70",
+  },
+]
+
+export const Location = [
+  {
+    name:"COIMBATORE",
+    branch:"152 Places",
+  },
+  {
+    name:"CHENNAI",
+    branch:"291 Places",
+  },
+  {
+    name:"SALEM",
+    branch:"92 Places",
+  },
+  {
+    name:"KALLAKURICHI",
+    branch:"51 Places",
+  },
+  {
+    name:"MADURAI",
+    branch:"75 Places",
+  },
+  {
+    name:"KARUR",
+    branch:"25 Places",
+  },
+  {
+    name:"DINDUGUL",
+    branch:"33 Places",
+  },
+  {
+    name:"VELLORE",
+    branch:"84 Places",
   },
 ]

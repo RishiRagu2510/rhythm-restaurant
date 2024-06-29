@@ -12,6 +12,10 @@
 .headerContainer {
     width: auto;
     margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .home .headerContainer h1 {
@@ -24,7 +28,7 @@
 }
 
 .home .headerContainer p {
-    margin-top: 15px;
+    margin-top: 2px;
     padding: 0;
     font-size: 40px;
     font-weight: lighter;
@@ -33,7 +37,7 @@
 
 .headerContainer button {
     background-color: white;
-    margin-top: 20px;
+    margin-top: 2px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
