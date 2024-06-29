@@ -57,6 +57,11 @@ export const MenuList = [
     favourite: "yes"
   },
   {
+    name: "Uttappam",
+    image: Uttappam,
+    price: "₹40",
+  },
+  {
     name: "Chicken Manchurian",
     image: CM,
     price: "₹90",
@@ -89,10 +94,6 @@ export const MenuList = [
     price: "₹80",
   },
   {
-    name: "Uttappam",
-    image: Uttappam,
-    price: "₹40",
-  }, {
     name: "Veg Noodles",
     image: VN,
     price: "₹70",
