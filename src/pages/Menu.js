@@ -54,7 +54,7 @@ const Menu = () => {
             <SwiperSlide key={index}>
               <Card>
                 <CardMedia
-                  sx={{ minHeight: "200px" }} // Adjust the minHeight here
+                  sx={{ minHeight: "200px" }}
                   component={"img"}
                   src={menu.image}
                   alt={menu.name}
@@ -89,7 +89,7 @@ const Menu = () => {
           <Card sx={{ maxWidth: "300px", display: "flex", m: 2 }} key={menu.name}>
             <CardActionArea>
               <CardMedia
-                sx={{ minHeight: "150px" }} // Adjust the minHeight here
+                sx={{ minHeight: "200px" }}
                 component={"img"}
                 src={menu.image}
                 alt={menu.name}
