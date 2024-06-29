@@ -19,6 +19,19 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/module
 const Menu = () => {
   return (
     <Layout>
+      <Typography
+        variant="h5"
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          mt: 4,
+          mb: 4,
+          fontWeight: "bold",
+        }}
+      >
+        TOP FOOD
+      </Typography>
       <Box sx={{ width: "80%", margin: "auto", mt: 2, mb: 4 }}>
         <Swiper
           effect={"coverflow"}
