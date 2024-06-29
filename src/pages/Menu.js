@@ -88,7 +88,7 @@ const Menu = () => {
       
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         <Container>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={1} justifyContent="center">
         {MenuList.map((menu) => (
            <Grid item xs={6} sm={6} md={4} lg={3} key={menu.name}>
           <Card sx={{ maxWidth: "300px", display: "flex", m: 2 }} >
