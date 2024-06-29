@@ -3,11 +3,13 @@ import { MenuList } from "../data/Data";
 import Layout from "./../components/Layout/Layout";
 import {
   Box,
+  Grid,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
   Typography,
+  Container,
 } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -83,25 +85,31 @@ const Menu = () => {
       >
         SOUTH INDIAN FOOD
       </Typography>
-
+      
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        <Container>
+      <Grid container spacing={2} justifyContent="center">
         {MenuList.map((menu) => (
-          <Card sx={{ maxWidth: "300px", display: "flex", m: 2 }} key={menu.name}>
+           <Grid item xs={6} sm={6} md={4} lg={3} key={menu.name}>
+          <Card sx={{ maxWidth: "300px", display: "flex", m: 2 }} >
             <CardActionArea>
               <CardMedia
-                sx={{ minHeight: "150px" }} // Adjust the minHeight here
+                sx={{ minHeight: "150px" }} 
                 component={"img"}
                 src={menu.image}
                 alt={menu.name}
               />
               <CardContent>
-                <Typography variant="h5" gutterBottom component={"div"} sx={{ textAlign: "center" }}>
+                <Typography variant="h6" gutterBottom component={"div"} sx={{ textAlign: "center" }}>
                   {menu.name}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
+          </Grid>
         ))}
+        </Grid>
+        </Container>
       </Box>
     </Layout>
   );
