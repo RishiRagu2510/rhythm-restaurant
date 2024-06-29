@@ -16,7 +16,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { EffectCoverflow,Navigation, Autoplay } from "swiper/modules";
 
 const Menu = () => {
   return (
@@ -47,10 +47,9 @@ const Menu = () => {
             modifier: 1,
             slideShadows: true,
           }}
-          pagination={{ clickable: true }}
           navigation
           autoplay={{ delay: 2500, disableOnInteraction: false }}
-          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          modules={[EffectCoverflow, Navigation, Autoplay]}
         >
           {MenuList.map((menu, index) => (
             <SwiperSlide key={index}>
@@ -88,7 +87,7 @@ const Menu = () => {
       
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         <Container>
-      <Grid container spacing={1} justifyContent="center">
+      <Grid container spacing={0.5} justifyContent="center">
         {MenuList.map((menu) => (
            <Grid item xs={6} sm={6} md={4} lg={3} key={menu.name}>
           <Card sx={{ maxWidth: "300px", display: "flex", m: 2 }} >
